@@ -1,5 +1,5 @@
-name: beamcoda_jobs_flutter
-description: BeamCoda Jobs Portal Flutter Application
+name: cari_jobs_flutter
+description: Cari Jobs Portal Flutter Application
 
 version: 1.0.0+1
 
@@ -47,43 +47,3 @@ flutter:
     - assets/illustrations/
     - assets/icons/
     - assets/icons/sharer/
-
-flavorizr:
-  app:
-    android:
-      flavorDimensions: "app"
-    ios:
-
-
-  flavors:
-    production:
-      # Flavor-specific configuration for the production flavor
-      flavorizr:
-        name: "Production"
-        description: "Production environment"
-        colors:
-          primary: Colors.blue
-        # Android-specific configuration
-        android:
-          applicationId: "com.example.beamcoda_jobs.production"
-        # iOS-specific configuration
-        ios:
-          bundleId: "com.example.beamcoda_jobs.production"
-          config: "assets/files/firebase/GoogleService-Info-prod.plist"
-      #          Add any other iOS-specific settings here
-
-      development:
-        # Flavor-specific configuration for the development flavor
-        flavorizr:
-          name: "Development"
-          description: "Development environment"
-          colors:
-            primary: Colors.red
-          # Android-specific configuration
-          android:
-            applicationId: "com.example.beamcoda_jobs.dev"
-          # iOS-specific configuration
-          ios:
-            bundleId: "com.example.beamcoda_jobs.dev"
-            config: "assets/files/firebase/GoogleService-Info-dev.plist"
-  #            Add any other iOS-specific settings here

@@ -2,7 +2,7 @@
 
 class AppConstants {
   static const String API_URL = "http://10.0.2.2:8000";
-  static const String STATIC_WEB_URL = "http://192.168.1.245:8000";
+  static const String STATIC_WEB_URL = "http://10.0.2.2:9000";
   static const String CONTACT_EMAIL = "contact@beamcoda.com";
   static const String CURRENCY_PREFIX = "\$";
 

@@ -9,7 +9,7 @@ void main() {
 
   maincommon(
     FlavorConfig()
-      ..appTitle = "School 1"
+      ..appTitle = "Main Prod"
       ..apiEndpoint = {
         Endpoints.items: "flutterjunction.api.dev/items",
         Endpoints.details: "flutterjunction.api.dev/item"

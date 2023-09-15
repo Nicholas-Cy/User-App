@@ -13,7 +13,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.example.beamcodaJobsFlutter</string>
+	<string>com.tenstar.carijobs</string>
 	<key>PROJECT_ID</key>
 	<string>codajobs-demo</string>
 	<key>STORAGE_BUCKET</key>

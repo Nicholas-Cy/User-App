@@ -44,38 +44,38 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyCuEF0HOLbOlcUW3TRLC5z8U5K7ULJ3Ii4',
-    appId: '1:883383557401:web:9169ea6300e1d2a4757988',
-    messagingSenderId: '883383557401',
-    projectId: 'codajobs-605ab',
-    authDomain: 'codajobs-605ab.firebaseapp.com',
-    storageBucket: 'codajobs-605ab.appspot.com',
-    measurementId: 'G-5M4VEXHSV6',
+    apiKey: 'AIzaSyB3GdkkLIhEj91GL-BdrEdQnItdQqy1mRU',
+    appId: '1:118594946501:web:9031435f0729740e4f37ac',
+    messagingSenderId: '118594946501',
+    projectId: 'cari-jobs-d90a8',
+    authDomain: 'cari-jobs-d90a8.firebaseapp.com',
+    storageBucket: 'cari-jobs-d90a8.appspot.com',
+    measurementId: 'G-3Y170CZ5JC',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyAfZehSv3DMTJfcgit80KxPjq_LMXA9wok',
-    appId: '1:883383557401:android:8c24bf7e177307da757988',
-    messagingSenderId: '883383557401',
-    projectId: 'codajobs-605ab',
-    storageBucket: 'codajobs-605ab.appspot.com',
+    apiKey: 'AIzaSyAviR6P8usxMmK5iVflgVGPQ0X6JcrrWdU',
+    appId: '1:118594946501:android:256e2d44f152431d4f37ac',
+    messagingSenderId: '118594946501',
+    projectId: 'cari-jobs-d90a8',
+    storageBucket: 'cari-jobs-d90a8.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDXiE64BllLI2NHCciJmEeygS8oVO1j5NI',
-    appId: '1:883383557401:ios:77f4c18010d1f82b757988',
-    messagingSenderId: '883383557401',
-    projectId: 'codajobs-605ab',
-    storageBucket: 'codajobs-605ab.appspot.com',
-    iosBundleId: 'com.example.beamcodaJobsFlutter',
+    apiKey: 'AIzaSyA7ONHsvoXYWPCewlWctVxUw6O6v5PFtqE',
+    appId: '1:118594946501:ios:03eb1df54fbeef144f37ac',
+    messagingSenderId: '118594946501',
+    projectId: 'cari-jobs-d90a8',
+    storageBucket: 'cari-jobs-d90a8.appspot.com',
+    iosBundleId: 'com.tenstar.carijobs',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyDXiE64BllLI2NHCciJmEeygS8oVO1j5NI',
-    appId: '1:883383557401:ios:77f4c18010d1f82b757988',
-    messagingSenderId: '883383557401',
-    projectId: 'codajobs-605ab',
-    storageBucket: 'codajobs-605ab.appspot.com',
-    iosBundleId: 'com.example.beamcodaJobsFlutter',
+    apiKey: 'AIzaSyA7ONHsvoXYWPCewlWctVxUw6O6v5PFtqE',
+    appId: '1:118594946501:ios:03eb1df54fbeef144f37ac',
+    messagingSenderId: '118594946501',
+    projectId: 'cari-jobs-d90a8',
+    storageBucket: 'cari-jobs-d90a8.appspot.com',
+    iosBundleId: 'com.tenstar.carijobs',
   );
 }
