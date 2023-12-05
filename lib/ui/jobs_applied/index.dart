@@ -7,7 +7,7 @@ import '../../components/shared/jobs/job_post_applied.dart';
 import '../../data/job.dart';
 import '../../types/navigation.dart';
 import '../../ui/theme_data/fonts.dart';
-
+//job application page ui
 class JobsAppliedFor extends StatefulWidget {
   const JobsAppliedFor({super.key});
 

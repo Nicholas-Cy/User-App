@@ -49,7 +49,7 @@ class _WelcomeHomeSectionState extends State<WelcomeHomeSection> {
             key: UniqueKey(),
             gradient: const LinearGradient(
               colors: [
-                Color.fromRGBO(93, 216, 171, 1.0),
+                Color.fromRGBO(245, 151, 55, 1.0),
                 Color.fromRGBO(0, 244, 230, 0.5)
               ],
             ),

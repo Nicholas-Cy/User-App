@@ -167,10 +167,12 @@ class AuthProvider extends ChangeNotifier {
       'img_url': '${AppConstants.API_URL}/img/logo.png',
       'first_name': user.firstName,
       'last_name': user.lastName,
-      'date_of_birth': DateFormat('yyyy-MM-dd')
+      'date_of_birth': user.dateOfBirth == null || user.dateOfBirth.isEmpty
+          ? ''
+          : DateFormat('yyyy-MM-dd')
           .format(DateFormat('MMMM d, yyyy').parse(user.dateOfBirth)),
-      'profession': user.profession,
-      'short_bio': user.bio,
+      'profession': user.profession != null ? user.profession : null,
+      'short_bio': user.bio != null ? user.bio : null,
     }, headers: {
       'Accept': 'application/json',
     });

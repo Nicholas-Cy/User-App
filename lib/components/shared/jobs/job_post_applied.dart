@@ -6,7 +6,8 @@ import '../../../logic/cubit/theme_cubit.dart';
 import '../../../types/job_post.dart';
 import '../../../ui/job/index.dart';
 import '../../../ui/theme_data/fonts.dart';
-
+//this is the page that shows job applications like the words of jobs, company, salary
+//this is styling for the jobs in job applicatoins page
 class JobPostAppliedItem extends StatelessWidget {
   final JobPost jobPost;
   const JobPostAppliedItem({required Key key, required this.jobPost})
@@ -24,7 +25,7 @@ class JobPostAppliedItem extends StatelessWidget {
       onPressed: () {
         Navigator.of(context).push(
           MaterialPageRoute(
-            builder: (context) => JobPage(key: UniqueKey(), id: 2),
+            builder: (context) => JobPage(key: UniqueKey(), id: jobPost.id),
           ),
         );
       },
@@ -100,3 +101,4 @@ class JobPostAppliedItem extends StatelessWidget {
     );
   }
 }
+

@@ -546,7 +546,7 @@ class _JobPageState extends State<JobPage> {
                         Text(
                           (jobPost.deadlineDate != '')
                               ? DateFormat("d MMMM y").format(
-                                  DateFormat("yyyy-mm-dd hh:mm:ss")
+                                  DateFormat("yyyy-MM-dd hh:mm:ss")
                                       .parse(jobPost.deadlineDate),
                                 )
                               : 'N/A',
