@@ -6,7 +6,7 @@ import 'package:provider/provider.dart';
 import '../../../../components/shared/jobs/job_post.dart';
 import '../../../../data/job.dart';
 import '../../../../logic/cubit/theme_cubit.dart';
-import '../../../../ui/explore/index.dart';
+import '../../../../ui/explore/index1.dart';
 import '../../../theme_data/fonts.dart';
 
 class ExploreJobs extends StatefulWidget {

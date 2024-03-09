@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import '../../../types/job_post.dart';
 
+
+import '../../data/job.dart';
 import './sections/blog/index.dart';
 import './sections/categories/index.dart';
 import './sections/companies/index.dart';
@@ -20,25 +24,87 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Padding(
-          padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 0.0),
-          child: Image(
-            width: 85.0,
-            image: AssetImage('assets/images/logo.png'),
-          ),
+        title: Stack(
+          children: <Widget>[
+             Container(
+               padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 0.0),
+              child: Image.asset('assets/images/logo.png', width: 80),
+            ),
+          ],
         ),
-        centerTitle: true,
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.search),
+            onPressed: (){
+
+            },
+          )
+        ]
+        ,centerTitle: true,
         elevation: 0,
-        backgroundColor: Theme.of(context).backgroundColor,
+        backgroundColor: Theme
+            .of(context)
+            .backgroundColor,
         shadowColor: Colors.transparent,
-        iconTheme: IconThemeData(color: Theme.of(context).primaryColor),
+        iconTheme: IconThemeData(color: Theme
+            .of(context)
+            .primaryColor),
       ),
+      // body: new Column(
+      //   children: <Widget>[
+      //     new Container(
+      //       color: Colors.grey,
+      //       child: new Padding(
+      //         padding: const EdgeInsets.all(8.0),
+      //         child: new Card(
+      //           child: ListTile(
+      //             leading: Icon(Icons.search),
+      //             title: new TextField(
+      //               controller: controller,
+      //               decoration: new InputDecoration(
+      //                 hintText: 'Search', border: InputBorder.none),
+      //               onChanged: onSearchTextChanged,
+      //               ),
+      //             trailing: new IconButton(
+      //                 icon: new Icon(Icons.cancel),
+      //               onPressed: (){
+      //                   controller.clear();
+      //                   onSearchTextChanged('');
+      //               },
+      //             ),
+      //           ),
+      //         ),
+      //       ),
+      //     ),
+      //     new Expanded(
+      //       child: _searchResult.length !=0 || controller.text.isNotEmpty
+      //           ? new ListView.builder(
+      //           itemCount: _searchResult.length,
+      //       itemBuilder: (context, i){
+      //             return new Card(
+      //           child: new ListTile(
+      //             title: new Text(
+      //             _searchResult[i].title,
+      //             style: TextStyle(
+      //             fontWeight: FontWeight.bold,
+      //             color: Colors.purpleAccent),
+      //              ),
+      //
+      //             ),
+      //             );
+      //       },
+      //       ),
+      //     ),
+      //   ],
+      // ),
       drawer: PageDrawer(key: UniqueKey(), page: PAGES.home),
       body: SingleChildScrollView(
         physics: const BouncingScrollPhysics(),
         scrollDirection: Axis.vertical,
         child: Container(
-          color: Theme.of(context).backgroundColor,
+          color: Theme
+              .of(context)
+              .backgroundColor,
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: const <Widget>[
@@ -59,3 +125,4 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
+
