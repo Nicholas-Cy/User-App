@@ -55,3 +55,4 @@ https://stackoverflow.com/questions/59732883/flutter-gradle-build-failed-to-prod
 #if got kotlin issue, mostly due to upgraded IDE
 go to `android/build.gradle`
 https://stackoverflow.com/questions/67448034/module-was-compiled-with-an-incompatible-version-of-kotlin-the-binary-version
+if the got the kotlin issues incompatible (binary version) can refer to the highest score answer
