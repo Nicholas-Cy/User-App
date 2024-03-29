@@ -57,3 +57,18 @@ go to `android/build.gradle`
 https://stackoverflow.com/questions/67448034/module-was-compiled-with-an-incompatible-version-of-kotlin-the-binary-version
 
 if the got the kotlin issues incompatible (binary version) can refer to the highest score answer
+
+If you are using vs code, you can add this line into .vscode/launch.json
+
+```json
+        {
+            "name": "carijobs flavor dev lib/main_dev.dart",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_dev.dart",
+            "args": [
+                "--flavor",
+                "dev"
+            ]
+        },
+```
