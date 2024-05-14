@@ -242,115 +242,115 @@ class _RegisterPageState extends State<RegisterPage> {
                           ),
                         ),
                       ),
-                      const Padding(
-                        padding: EdgeInsets.only(
-                          bottom: 5.0,
-                        ),
-                        child: Text("Date of Birth"),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(
-                          bottom: 20.0,
-                        ),
-                        child: ElevatedButton(
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: Colors.white,
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(10.0),
-                            ),
-                            elevation: 0,
-                          ),
-                          onPressed: () {
-                            DatePicker.showDatePicker(
-                              context,
-                              showTitleActions: true,
-                              minTime: DateTime(
-                                dateNow.year - 100,
-                                dateNow.month - 12,
-                                dateNow.day - 30,
-                              ),
-                              maxTime: DateTime(
-                                dateNow.year - 12,
-                                dateNow.month - 12,
-                                dateNow.day - 30,
-                              ),
-                              currentTime: (_registerUser.dateOfBirth != '')
-                                  ? DateFormat('MMMM d, yyyy')
-                                      .parse(_registerUser.dateOfBirth)
-                                  : dateNow,
-                              onConfirm: (date) {
-                                setState(() {
-                                  _registerUser.dateOfBirth =
-                                      DateFormat('MMMM d, yyyy')
-                                          .format(date)
-                                          .toString();
-                                });
-                              },
-                            );
-                          },
-                          child: Text(
-                            (_registerUser.dateOfBirth == '')
-                                ? 'Select Your Date'
-                                : _registerUser.dateOfBirth,
-                            style: GoogleFonts.dmSans(
-                              color: Colors.black,
-                            ),
-                          ),
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(
-                          bottom: 20.0,
-                        ),
-                        child: TextFormField(
-                          validator: (value) =>
-                              value!.isEmpty ? 'Enter Your Profession' : null,
-                          onSaved: (value) => _registerUser.profession = value!,
-                          style: const TextStyle(
-                            color: Colors.black,
-                            decorationColor: Colors.black,
-                          ),
-                          decoration: InputDecoration(
-                            contentPadding:
-                                const EdgeInsets.symmetric(vertical: 5.0),
-                            hintText: 'Profession',
-                            filled: true,
-                            fillColor: Colors.white,
-                            prefixIcon: const Icon(Icons.work),
-                            hintStyle: const TextStyle(
-                                color: Colors.grey, fontSize: 15.0),
-                            enabledBorder: InputsThemeData.inputBorder,
-                            focusedBorder: InputsThemeData.inputBorderSelected,
-                          ),
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(
-                          bottom: 20.0,
-                        ),
-                        child: TextFormField(
-                          validator: (value) =>
-                              value!.isEmpty ? 'Enter Your Bio' : null,
-                          onSaved: (value) => _registerUser.bio = value!,
-                          style: const TextStyle(
-                            color: Colors.black,
-                            decorationColor: Colors.black,
-                          ),
-                          maxLines: 10,
-                          maxLength: 500,
-                          decoration: InputDecoration(
-                            contentPadding: const EdgeInsets.symmetric(
-                                vertical: 15.0, horizontal: 15.0),
-                            hintText: 'Bio',
-                            filled: true,
-                            fillColor: Colors.white,
-                            hintStyle: const TextStyle(
-                                color: Colors.grey, fontSize: 15.0),
-                            enabledBorder: InputsThemeData.inputBorder,
-                            focusedBorder: InputsThemeData.inputBorderSelected,
-                          ),
-                        ),
-                      ),
+                      // const Padding(
+                      //   padding: EdgeInsets.only(
+                      //     bottom: 5.0,
+                      //   ),
+                      //   child: Text("Date of Birth"),
+                      // ),
+                      // Padding(
+                      //   padding: const EdgeInsets.only(
+                      //     bottom: 20.0,
+                      //   ),
+                      //   child: ElevatedButton(
+                      //     style: ElevatedButton.styleFrom(
+                      //       backgroundColor: Colors.white,
+                      //       shape: RoundedRectangleBorder(
+                      //         borderRadius: BorderRadius.circular(10.0),
+                      //       ),
+                      //       elevation: 0,
+                      //     ),
+                      //     onPressed: () {
+                      //       DatePicker.showDatePicker(
+                      //         context,
+                      //         showTitleActions: true,
+                      //         minTime: DateTime(
+                      //           dateNow.year - 100,
+                      //           dateNow.month - 12,
+                      //           dateNow.day - 30,
+                      //         ),
+                      //         maxTime: DateTime(
+                      //           dateNow.year - 12,
+                      //           dateNow.month - 12,
+                      //           dateNow.day - 30,
+                      //         ),
+                      //         currentTime: (_registerUser.dateOfBirth != '')
+                      //             ? DateFormat('MMMM d, yyyy')
+                      //                 .parse(_registerUser.dateOfBirth)
+                      //             : dateNow,
+                      //         onConfirm: (date) {
+                      //           setState(() {
+                      //             _registerUser.dateOfBirth =
+                      //                 DateFormat('MMMM d, yyyy')
+                      //                     .format(date)
+                      //                     .toString();
+                      //           });
+                      //         },
+                      //       );
+                      //     },
+                      //     child: Text(
+                      //       (_registerUser.dateOfBirth == '')
+                      //           ? 'Select Your Date'
+                      //           : _registerUser.dateOfBirth,
+                      //       style: GoogleFonts.dmSans(
+                      //         color: Colors.black,
+                      //       ),
+                      //     ),
+                      //   ),
+                      // ),
+                      // Padding(
+                      //   padding: const EdgeInsets.only(
+                      //     bottom: 20.0,
+                      //   ),
+                      //   child: TextFormField(
+                      //     validator: (value) =>
+                      //         value!.isEmpty ? 'Enter Your Profession' : null,
+                      //     onSaved: (value) => _registerUser.profession = value!,
+                      //     style: const TextStyle(
+                      //       color: Colors.black,
+                      //       decorationColor: Colors.black,
+                      //     ),
+                      //     decoration: InputDecoration(
+                      //       contentPadding:
+                      //           const EdgeInsets.symmetric(vertical: 5.0),
+                      //       hintText: 'Profession',
+                      //       filled: true,
+                      //       fillColor: Colors.white,
+                      //       prefixIcon: const Icon(Icons.work),
+                      //       hintStyle: const TextStyle(
+                      //           color: Colors.grey, fontSize: 15.0),
+                      //       enabledBorder: InputsThemeData.inputBorder,
+                      //       focusedBorder: InputsThemeData.inputBorderSelected,
+                      //     ),
+                      //   ),
+                      // ),
+                      // Padding(
+                      //   padding: const EdgeInsets.only(
+                      //     bottom: 20.0,
+                      //   ),
+                      //   child: TextFormField(
+                      //     validator: (value) =>
+                      //         value!.isEmpty ? 'Enter Your Bio' : null,
+                      //     onSaved: (value) => _registerUser.bio = value!,
+                      //     style: const TextStyle(
+                      //       color: Colors.black,
+                      //       decorationColor: Colors.black,
+                      //     ),
+                      //     maxLines: 10,
+                      //     maxLength: 500,
+                      //     decoration: InputDecoration(
+                      //       contentPadding: const EdgeInsets.symmetric(
+                      //           vertical: 15.0, horizontal: 15.0),
+                      //       hintText: 'Bio',
+                      //       filled: true,
+                      //       fillColor: Colors.white,
+                      //       hintStyle: const TextStyle(
+                      //           color: Colors.grey, fontSize: 15.0),
+                      //       enabledBorder: InputsThemeData.inputBorder,
+                      //       focusedBorder: InputsThemeData.inputBorderSelected,
+                      //     ),
+                      //   ),
+                      // ),
                       Padding(
                         padding: const EdgeInsets.symmetric(vertical: 5.0),
                         child: (msg.isNotEmpty) ? Text(msg) : const SizedBox(),
