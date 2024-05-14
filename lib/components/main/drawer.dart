@@ -9,7 +9,6 @@ import '../../types/navigation.dart';
 import '../../ui/authentication/login.dart';
 import '../../ui/blog/index.dart';
 import '../../ui/explore/index1.dart';
-import '../../ui/explore/indexsearch.dart';
 
 import '../../ui/homepage/index.dart';
 import '../../ui/jobs_applied/index.dart';
@@ -116,7 +115,7 @@ class _PageDrawerState extends State<PageDrawer> {
               onTap: () {
                 Navigator.of(context).push(
                   MaterialPageRoute(
-                    builder: (context) => const SearchPage(),
+                    builder: (context) => const Explore(),
                   ),
                 );
               },
