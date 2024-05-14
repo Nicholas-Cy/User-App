@@ -7,6 +7,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:http/http.dart' as http;
 import 'package:path/path.dart' as p;
 import 'package:provider/provider.dart';
+import 'package:permission_handler/permission_handler.dart';
 
 import '../../../data/auth.dart';
 import '../../../logic/cubit/theme_cubit.dart';
@@ -30,7 +31,15 @@ class _ProfilePageState extends State<ProfilePage> {
     WidgetsBinding.instance.addPostFrameCallback((_) async {
       final authProvider = Provider.of<AuthProvider>(context, listen: false);
       await authProvider.loadUserMetaInfo();
+      _checkPermissions();  //check for permission
     });
+  }
+
+  void _checkPermissions() async {  //check permission for storage
+    var status = await Permission.storage.status;
+    if (!status.isGranted) {
+      await Permission.storage.request();
+    }
   }
 
   Future<void> uploadResumeToUser(BuildContext context) async {
